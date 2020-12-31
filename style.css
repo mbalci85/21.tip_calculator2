@@ -1,15 +1,14 @@
-* {
-	box-sizing: border-box;
-}
 body {
 	background-color: aquamarine;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	margin: 0 auto;
 }
 
 h1 {
+	padding: 1.7rem;
 	color: #16213e;
 	text-align: center;
+	font-weight: bolder;
+	font-size: 2rem;
 }
 
 img {
@@ -17,4 +16,5 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
+	border-radius: '20px';
 }
