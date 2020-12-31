@@ -1,4 +1,5 @@
-let bills = [124, 48, 75, 268];
+let bills = [124, 148, 175, 168];
+let budget = 1000;
 
 const getTotalTips = (arr) => {
 	return Math.round(
@@ -16,4 +17,22 @@ const getTotalTips = (arr) => {
 	);
 };
 
-alert(getTotalTips(bills));
+console.log(getTotalTips(bills));
+
+const budgetDust = (arrBills, totalBudget) => {
+	let balance =
+		totalBudget -
+		(getTotalTips(arrBills) + arrBills.reduce((acc, val) => acc + val, 0));
+
+	if (balance >= totalBudget * 0.2) {
+		return `You have spent ${
+			totalBudget - balance
+		} dollars. It is less than or equal to 80% of your total budget. Well DONE!!!`;
+	} else {
+		return `You have spent ${
+			totalBudget - balance
+		} dollars. It is more than 80% of your total budget. Be CAREFUL!!!`;
+	}
+};
+
+console.log(budgetDust(bills, budget));
