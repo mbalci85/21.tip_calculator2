@@ -1,5 +1,10 @@
+* {
+	box-sizing: border-box;
+}
 body {
-	background-color: #a6f6f1;
+	background-color: aquamarine;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0 auto;
 }
 
 h1 {
